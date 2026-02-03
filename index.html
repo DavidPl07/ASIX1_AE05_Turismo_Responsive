@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Barcelona</title>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap SOLO para el bloque extra -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Elemento flotante -->
+<a href="https://www.barcelonaturisme.com" target="_blank" class="flotante">
+    Info turística
+</a>
+
+<header>
+    <h1>Descubre Barcelona</h1>
+    <p>Guía turística básica de la ciudad</p>
+</header>
+
+<main class="layout">
+
+    <!-- COLUMNA 1: MENÚ -->
+    <nav class="col-menu">
+        <ul>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#lugares">Lugares de interés</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#extra">Experiencia</a></li>
+        </ul>
+    </nav>
+
+    <!-- COLUMNA 2: CONTENIDO PRINCIPAL -->
+    <section class="col-principal">
+
+        <!-- GALERÍA -->
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="grid-galeria">
+                <img src="img/galeria/1.jpg" alt="Barcelona">
+                <img src="img/galeria/2.jpg" alt="Barcelona">
+                <img src="img/galeria/3.jpg" alt="Barcelona">
+                <img src="img/galeria/4.jpg" alt="Barcelona">
+                <img src="img/galeria/5.jpg" alt="Barcelona">
+                <img src="img/galeria/6.jpg" alt="Barcelona">
+            </div>
+        </section>
+
+        <!-- LUGARES DE INTERÉS -->
+        <section id="lugares">
+            <h2>Lugares de interés</h2>
+
+            <div class="grid-lugares">
+
+                <article class="lugar">
+                    <img src="img/lugares/sagrada.jpg" alt="Sagrada Familia">
+                    <h3>Sagrada Familia</h3>
+                    <p>Basílica diseñada por Antoni Gaudí, uno de los símbolos de la ciudad.</p>
+                    <p><strong>Ubicación:</strong> Eixample</p>
+                </article>
+
+                <article class="lugar">
+                    <img src="img/lugares/guell.jpg" alt="Park Güell">
+                    <h3>Park Güell</h3>
+                    <p>Parque modernista con vistas espectaculares de Barcelona.</p>
+                    <p><strong>Ubicación:</strong> Gràcia</p>
+                </article>
+
+                <article class="lugar">
+                    <img src="img/lugares/rambla.jpg" alt="La Rambla">
+                    <h3>La Rambla</h3>
+                    <p>Paseo céntrico lleno de vida, comercios y artistas callejeros.</p>
+                    <p><strong>Ubicación:</strong> Centro</p>
+                </article>
+
+                <article class="lugar">
+                    <img src="img/lugares/barceloneta.jpg" alt="Barceloneta">
+                    <h3>Barceloneta</h3>
+                    <p>Playa urbana ideal para pasear, comer y disfrutar del mar.</p>
+                    <p><strong>Ubicación:</strong> Litoral</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MAPA -->
+        <section id="mapa">
+            <h2>Mapa de la ciudad</h2>
+            <img src="img/mapa-barcelona.png" alt="Mapa de Barcelona" class="mapa">
+        </section>
+
+        <!-- BLOQUE EXTRA (BOOTSTRAP) -->
+        <section id="extra">
+            <h2>¿Por qué visitar Barcelona?</h2>
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#uno">
+                            Cultura
+                        </button>
+                    </h2>
+                    <div id="uno" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Museos, arquitectura y eventos culturales todo el año.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#dos">
+                            Gastronomía
+                        </button>
+                    </h2>
+                    <div id="dos" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Cocina mediterránea, tapas y mercados tradicionales.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <!-- COLUMNA 3: NOTICIAS -->
+    <aside class="col-noticias">
+        <h2>Últimas noticias</h2>
+
+        <article class="noticia">
+            <img src="img/noticias/1.jpg" alt="Noticia">
+            <h4>Festival cultural</h4>
+            <p>Barcelona celebra un nuevo festival artístico...</p>
+            <a href="https://www.ajuntament.barcelona.cat" target="_blank">Leer más</a>
+        </article>
+
+        <article class="noticia">
+            <img src="img/noticias/2.jpg" alt="Noticia">
+            <h4>Evento deportivo</h4>
+            <p>La ciudad acoge una competición internacional...</p>
+            <a href="https://www.ajuntament.barcelona.cat" target="_blank">Leer más</a>
+        </article>
+
+        <article class="noticia">
+            <img src="img/noticias/3.jpg" alt="Noticia">
+            <h4>Nueva exposición</h4>
+            <p>Un museo inaugura una exposición temporal...</p>
+            <a href="https://www.ajuntament.barcelona.cat" target="_blank">Leer más</a>
+        </article>
+
+        <article class="noticia">
+            <img src="img/noticias/4.jpg" alt="Noticia">
+            <h4>Obras públicas</h4>
+            <p>Mejoras en infraestructuras de transporte...</p>
+            <a href="https://www.ajuntament.barcelona.cat" target="_blank">Leer más</a>
+        </article>
+
+        <article class="noticia">
+            <img src="img/noticias/5.jpg" alt="Noticia">
+            <h4>Turismo sostenible</h4>
+            <p>Nuevas medidas para un turismo responsable...</p>
+            <a href="https://www.ajuntament.barcelona.cat" target="_blank">Leer más</a>
+        </article>
+
+    </aside>
+
+</main>
+
+<footer>
+    <p>Proyecto educativo – Turismo Responsive</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
