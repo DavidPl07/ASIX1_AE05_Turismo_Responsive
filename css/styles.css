@@ -227,7 +227,7 @@ header, footer {
     /* MENÚ: ocupa toda la fila */
     .col-menu {
         order: -1;
-        grid-column: 1 / -1;      /* 👈 CLAVE */
+        grid-column: 1 / -1;      
         text-align: center;
         padding: 20px 10px;
     }
@@ -239,7 +239,7 @@ header, footer {
 
     /* CONTENIDO PRINCIPAL: ocupa toda la fila */
     .col-principal {
-        grid-column: 1 / -1;      /* 👈 CLAVE */
+        grid-column: 1 / -1;     
     }
 
     /* GALERÍA centrada */
