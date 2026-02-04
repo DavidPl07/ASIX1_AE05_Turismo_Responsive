@@ -172,19 +172,21 @@ header, footer {
 .noticia {
     background-color: var(--blanco);
     padding: 10px;
-    height: 220px;
+    min-height: 300px;              /* 👈 clave */
     display: grid;
     grid-template-rows: auto auto 1fr auto;
     border-left: 4px solid var(--purpura);
     border-radius: 8px;
 }
 
-.noticia img {
+
+.img-noticia {
     width: 100%;
-    max-height: 200px;
+    max-height: 500px;              /* 👈 tamaño grande pero seguro */
     object-fit: contain;
     border-radius: 5px;
 }
+
 
 
 
