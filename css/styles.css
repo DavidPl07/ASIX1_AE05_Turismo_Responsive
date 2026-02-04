@@ -218,16 +218,10 @@ header, footer {
 
 @media (max-width: 600px) {
 
-    /* Estructura en una sola columna */
+    /* Layout en una columna */
     .layout {
         grid-template-columns: 1fr;
         gap: 15px;
-    }
-
-    /* Galería y lugares en vertical */
-    .grid-galeria,
-    .grid-lugares {
-        grid-template-columns: 1fr;
     }
 
     /* Menú arriba y centrado */
@@ -242,7 +236,27 @@ header, footer {
         padding: 10px;
     }
 
-    /* Separación entre secciones */
+    /* GALERÍA centrada */
+    .grid-galeria {
+        grid-template-columns: 1fr;
+        justify-items: center;        /* 👈 CLAVE */
+    }
+
+    .grid-galeria img {
+        max-width: 90%;               /* 👈 no ocupa todo */
+    }
+
+    /* LUGARES centrados */
+    .grid-lugares {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .lugar {
+        width: 90%;
+    }
+
+    /* Separación visual */
     .col-principal section {
         margin-bottom: 40px;
     }
